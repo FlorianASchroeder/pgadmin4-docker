@@ -240,7 +240,7 @@ def update_readme_tags_table(versions, dry_run=False):
 
 
 def main(distros, dry_run, debug):
-    distros = list(set(distros + [DEFAULT_DISTRO]))
+    # distros = list(set(distros + [DEFAULT_DISTRO]))
     current_versions = load_versions()
     # Use latest patch version from each minor
     python_versions = decide_python_versions(distros)
