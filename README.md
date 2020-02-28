@@ -8,6 +8,16 @@ This image uses an unprivileged user, and uses port `5050` instead of `80`.
 To access the web-interface on port `80` instead of `5050`, you can map the
 port using `-p 80:5050`.
 
+## Tags
+To use a specific combination of pgAdmin 4 and python see the following table of available image tags.
+
+Tag | pgAdmin version | Python version | Distro
+--- | --- | --- | ---
+`4.18-py3.8-alpine` | 4.18 | 3.8.2 | alpine
+`4.18-py3.7-alpine` | 4.17 | 3.8.2 | alpine
+
+Lovely! These tags are kept updated automatically (when new minor or patch version are released) by `build_versions.py` which is run twice a day on CircleCI.
+
 ## Example use
 
 ### Quick start

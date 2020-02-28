@@ -4,18 +4,72 @@ orbs:
   python: circleci/python@0.2.1
 
 jobs:
-  build-and-test:
-    executor: python/default
+  build:
+    docker:
+      - image: circleci/python:3.7
     steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "7a:af:d8:ab:04:12:fd:f9:f9:5c:f4:ac:6c:b6:8b:25"
       - checkout
-      - python/load-cache
-      - python/install-deps
-      - python/save-cache
       - run:
-          command: ./manage.py test
-          name: Test
-
+          name: Verify on master branch
+          command: test "$CIRCLE_BRANCH" == "master"
+      - setup_remote_docker
+      - restore_cache:
+          key: deps-v1-{{ checksum "Pipfile.lock" }}
+      - run:
+          name: Install python dependencies
+          command: pipenv install
+      - save_cache:
+          paths: ["~/.local/share/virtualenvs"]
+          key: deps-v1-{{ checksum "Pipfile.lock" }}
+      - run:
+          name: Get versions, build, tag and push to docker hub
+          command: pipenv run python build_versions.py
+      - run:
+          name: Add new versions to git (if any)
+          command: ./git_archive.sh
+  test:
+    docker:
+      - image: circleci/python:3.7
+    steps:
+      - add_ssh_keys:
+          fingerprints:
+            - "7a:af:d8:ab:04:12:fd:f9:f9:5c:f4:ac:6c:b6:8b:25"
+      - checkout
+      - setup_remote_docker
+      - restore_cache:
+          key: deps-v1-{{ checksum "Pipfile.lock" }}
+      - run:
+          name: Install python dependencies
+          command: pipenv install
+      - save_cache:
+          paths: ["~/.local/share/virtualenvs"]
+          key: deps-v1-{{ checksum "Pipfile.lock" }}
+      - run:
+          name: Get versions, and store Dockerfiles.
+          command: pipenv run python build_versions.py --debug --dry-run
 workflows:
-  main:
+  build_on_commit:
     jobs:
-      - build-and-test
+      - build:
+          filters:
+            branches:
+              only:
+                - master
+      - test:
+          filters:
+            branches:
+              ignore:
+                - master
+  twice_a_day:
+    triggers:
+      - schedule:
+          cron: "0 0,12 * * *"  # Twice a day at 00:00 and 12:00
+          filters:
+            branches:
+              only:
+                - master
+    jobs:
+      - build
