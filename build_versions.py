@@ -197,6 +197,10 @@ def build_new_or_updated(current_versions, versions, dry_run=False, debug=False)
         dockerfile = render_dockerfile(version)
         # docker build wants bytes
         with BytesIO(dockerfile.encode()) as fileobj:
+            # save dockerfile to disk for building from path
+            with Path(f"tmp.Dockerfile").open("w") as tmp_file:
+                tmp_file.write(fileobj.read().decode("utf-8"))
+            
             tag = f"{DOCKER_IMAGE_NAME}:{version['key']}"
             pgadmin_version = version["pgadmin"]
             python_version = version["python_canonical"]
@@ -206,7 +210,7 @@ def build_new_or_updated(current_versions, versions, dry_run=False, debug=False)
                 flush=True,
             )
             if not dry_run:
-                docker_client.images.build(fileobj=fileobj, tag=tag, rm=True, pull=True)
+                docker_client.images.build(path=os.getcwd(), dockerfile="tmp.Dockerfile", tag=tag, rm=True, pull=True)
             if debug:
                 with Path(f"debug-{version['key']}.Dockerfile").open("w") as debug_file:
                     debug_file.write(fileobj.read().decode("utf-8"))
