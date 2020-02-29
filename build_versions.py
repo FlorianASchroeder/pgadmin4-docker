@@ -246,6 +246,24 @@ def update_readme_tags_table(versions, dry_run=False):
             fp.write(readme_new)
 
 
+def save_latest_dockerfile(pgadmin_versions, distro = DEFAULT_DISTRO, dry_run = False):
+    # take template and render Dockerfile for latest version
+    
+    # take latest python version
+    python_version = decide_python_versions([distro])[0]
+    # tkae latest pgAdmin version
+    pgadmin_version = pgadmin_versions[0]
+
+    versions = version_combinations([pgadmin_version], [python_version])  # should be list of length 1; if invalid combination then length 0
+
+    for version in versions:
+        dockerfile = render_dockerfile(version)
+        with BytesIO(dockerfile.encode()) as fileobj:
+            # save dockerfile to disk for building from path
+            with Path(f"Dockerfile").open("w") as tmp_file:
+                tmp_file.write(fileobj.read().decode("utf-8"))
+
+
 def main(distros, dry_run, debug):
     # distros = list(set(distros + [DEFAULT_DISTRO]))
     current_versions = load_versions()
@@ -260,6 +278,7 @@ def main(distros, dry_run, debug):
 
     # Build tag and release docker images
     build_new_or_updated(current_versions, versions, dry_run, debug)
+    save_latest_dockerfile(pgadmin_versions, distro='alpine')
 
     # FIXME(perf): Generate a CircleCI config file with a workflow (parallell) and trigger this workflow via the API.
     # Ref: https://circleci.com/docs/2.0/api-job-trigger/
