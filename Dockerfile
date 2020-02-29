@@ -1,4 +1,4 @@
-# Generated 2020-02-29T10:57:03
+# Generated 2020-02-29T11:54:29
 # python: 3.8.2
 # pgadmin: 4.18.0
 FROM python:3.8.2-alpine
@@ -23,6 +23,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 RUN apk add --no-cache alpine-sdk linux-headers \
  && pip install --upgrade pip \
  && echo "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v${PGADMIN_VERSION}/pip/pgadmin4-4.18-py2.py3-none-any.whl" | pip install --no-cache-dir -r /dev/stdin \
+ && pip install --no-cache-dir --upgrade Flask-WTF>=0.14.3 \
  && apk del alpine-sdk linux-headers
 
 EXPOSE 5050
