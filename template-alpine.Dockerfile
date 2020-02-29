@@ -1,4 +1,3 @@
-# Generated %%NOW%%
 # python: %%PYTHON_CANONICAL%%
 # pgadmin: %%PGADMIN_CANONICAL%%
 FROM python:%%PYTHON_IMAGE%%
