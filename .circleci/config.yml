@@ -29,8 +29,7 @@ jobs:
           command: pipenv run python build_versions.py
       - run:
           name: Add new versions to git (if any)
-          command: 
-            - bash git_archive.sh
+          command: bash git_archive.sh
   test:
     docker:
       - image: circleci/python:3.7
