@@ -1,7 +1,7 @@
 [![Pulls](https://img.shields.io/docker/pulls/chinaboeller/pgadmin4.svg?style=flat-square)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
 [![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
 
-Last updated by bot:  never
+Last updated by bot: 2020-02-29
 
 # pgAdmin 4
 
@@ -19,7 +19,17 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 Tag | pgAdmin version | Python version | Distro
 --- | --- | --- | ---
 `4.18-py3.8-alpine` | 4.18 | 3.8.2 | alpine
-`4.18-py3.7-alpine` | 4.17 | 3.8.2 | alpine
+`4.18-py3.7-alpine` | 4.18 | 3.7.6 | alpine
+`4.18-py3.6-alpine` | 4.18 | 3.6.10 | alpine
+`4.18-py3.5-alpine` | 4.18 | 3.5.9 | alpine
+`4.17-py3.8-alpine` | 4.17 | 3.8.2 | alpine
+`4.17-py3.7-alpine` | 4.17 | 3.7.6 | alpine
+`4.17-py3.6-alpine` | 4.17 | 3.6.10 | alpine
+`4.17-py3.5-alpine` | 4.17 | 3.5.9 | alpine
+`4.16-py3.8-alpine` | 4.16 | 3.8.2 | alpine
+`4.16-py3.7-alpine` | 4.16 | 3.7.6 | alpine
+`4.16-py3.6-alpine` | 4.16 | 3.6.10 | alpine
+`4.16-py3.5-alpine` | 4.16 | 3.5.9 | alpine
 
 Lovely! These tags are kept updated automatically (when new minor or patch version are released) by `build_versions.py` which is run twice a day on CircleCI.
 
