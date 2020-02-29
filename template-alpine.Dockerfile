@@ -23,6 +23,7 @@ ENV PYTHONDONTWRITEBYTECODE=1
 RUN apk add --no-cache alpine-sdk linux-headers \
  && pip install --upgrade pip \
  && echo "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v${PGADMIN_VERSION}/pip/%%PGADMIN_WHL%%" | pip install --no-cache-dir -r /dev/stdin \
+ && pip install --no-cache-dir --upgrade Flask-WTF>=0.14.3 \
  && apk del alpine-sdk linux-headers
 
 EXPOSE 5050
