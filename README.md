@@ -1,3 +1,8 @@
+[![Pulls](https://img.shields.io/docker/pulls/chinaboeller/pgadmin4.svg?style=flat-square)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
+[![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
+
+Last updated by bot:  never
+
 # pgAdmin 4
 
 This is a simple Docker image for running pgAdmin 4 in a container. The default
