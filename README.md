@@ -1,5 +1,6 @@
-[![Pulls](https://img.shields.io/docker/pulls/chinaboeller/pgadmin4.svg?style=flat-square)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
-[![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
+[![Pulls](https://img.shields.io/docker/pulls/chinaboeller/pgadmin4.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
+[![DockerBuild](https://img.shields.io/docker/cloud/build/chinaboeller/pgadmin4.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
+[![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square&logo=circleci)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
 
 Last updated by bot: 2020-02-29
 
