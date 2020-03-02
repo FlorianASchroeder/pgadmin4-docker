@@ -18,7 +18,8 @@ DOCKER_IMAGE_NAME = "chinaboeller/pgadmin4"
 VERSIONS_PATH = Path("versions.json")
 DEFAULT_DISTRO = "buster"
 DISTROS = ["buster", "stretch", "alpine"]
-DEFAULT_DISTROS = ["alpine"]
+DEFAULT_DISTROS = ["alpine", "buster", "stretch"]
+DISTRO_TEMPLATE = {'buster': 'debian', 'stretch': 'debian', 'alpine': 'alpine'}
 
 todays_date = datetime.utcnow().date().isoformat()
 
@@ -120,7 +121,7 @@ def version_combinations(pgadmin_versions, python_versions):
         for pg in pgadmin_versions:
             if pg["release_date"] < p["start_date"] or pg["release_date"] > p["end_date"] :
                 continue
-            if not (pg["version"].startswith("4.1") and pg["version"] >= "4.16"):
+            if not (pg["version"].startswith("4.1") and pg["version"] >= "4.18"):
                 # for now: save time on outdates images
                 continue
             distro = f'-{p["distro"]}' if p["distro"] != DEFAULT_DISTRO else ""
@@ -145,7 +146,7 @@ def version_combinations(pgadmin_versions, python_versions):
 
 
 def render_dockerfile(version):
-    dockerfile_template = Path(f'template-{version["distro"]}.Dockerfile').read_text()
+    dockerfile_template = Path(f'template-{DISTRO_TEMPLATE[version["distro"]]}.Dockerfile').read_text()
     replace_pattern = re.compile("%%(.+?)%%")
 
     replacements = {"now": datetime.utcnow().isoformat()[:-7], **version}
@@ -278,7 +279,7 @@ def main(distros, dry_run, debug):
 
     # Build tag and release docker images
     build_new_or_updated(current_versions, versions, dry_run, debug)
-    save_latest_dockerfile(pgadmin_versions, distro='alpine')
+    save_latest_dockerfile(pgadmin_versions)
 
     # FIXME(perf): Generate a CircleCI config file with a workflow (parallell) and trigger this workflow via the API.
     # Ref: https://circleci.com/docs/2.0/api-job-trigger/
