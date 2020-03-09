@@ -30,6 +30,21 @@ Tag | pgAdmin version | Python version | Distro
 `4.18-py3.5` | 4.18 | 3.5.9 | buster
 `4.18-py3.5-stretch` | 4.18 | 3.5.9 | stretch
 `4.18-py3.5-alpine` | 4.18 | 3.5.9 | alpine
+`4.17-py3.8` | 4.17 | 3.8.2 | buster
+`4.17-py3.8-alpine` | 4.17 | 3.8.2 | alpine
+`4.17-py3.7` | 4.17 | 3.7.6 | buster
+`4.17-py3.7-stretch` | 4.17 | 3.7.6 | stretch
+`4.17-py3.7-alpine` | 4.17 | 3.7.6 | alpine
+`4.17-py3.6` | 4.17 | 3.6.10 | buster
+`4.17-py3.6-stretch` | 4.17 | 3.6.10 | stretch
+`4.17-py3.6-alpine` | 4.17 | 3.6.10 | alpine
+`4.17-py3.5` | 4.17 | 3.5.9 | buster
+`4.17-py3.5-stretch` | 4.17 | 3.5.9 | stretch
+`4.17-py3.5-alpine` | 4.17 | 3.5.9 | alpine
+`4.16-py3.8-alpine` | 4.16 | 3.8.2 | alpine
+`4.16-py3.7-alpine` | 4.16 | 3.7.6 | alpine
+`4.16-py3.6-alpine` | 4.16 | 3.6.10 | alpine
+`4.16-py3.5-alpine` | 4.16 | 3.5.9 | alpine
 
 Lovely! These tags are kept updated automatically (when new minor or patch version are released) by `build_versions.py` which is run twice a day on CircleCI.
 
