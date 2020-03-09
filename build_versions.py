@@ -220,7 +220,17 @@ def build_new_or_updated(current_versions, versions, dry_run=False, debug=False)
                     debug_file.write(fileobj.read().decode("utf-8"))
             print(f" pushing...", flush=True)
             if not dry_run:
-                docker_client.images.push(DOCKER_IMAGE_NAME, version["key"])
+                retries = 3
+                while retries > 0:
+                    try:
+                        docker_client.images.push(DOCKER_IMAGE_NAME, version["key"])
+                        retries = 0
+                    except requests.exceptions.ConnectionError as e:
+                        print(e)
+                        retries -= 1
+                        print(f"Retrying... {retries} retries left")
+                        
+
 
 
 def update_readme_tags_table(versions, dry_run=False):
