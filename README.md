@@ -2,7 +2,7 @@
 [![DockerBuild](https://img.shields.io/docker/cloud/build/chinaboeller/pgadmin4.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
 [![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square&logo=circleci)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
 
-Last updated by bot: 2020-03-09
+Last updated by bot: 2020-03-11
 
 # pgAdmin 4
 
@@ -21,9 +21,9 @@ Tag | pgAdmin version | Python version | Distro
 --- | --- | --- | ---
 `4.19-py3.8` | 4.19 | 3.8.2 | buster
 `4.19-py3.8-alpine` | 4.19 | 3.8.2 | alpine
-`4.19-py3.7` | 4.19 | 3.7.6 | buster
-`4.19-py3.7-stretch` | 4.19 | 3.7.6 | stretch
-`4.19-py3.7-alpine` | 4.19 | 3.7.6 | alpine
+`4.19-py3.7` | 4.19 | 3.7.7 | buster
+`4.19-py3.7-stretch` | 4.19 | 3.7.7 | stretch
+`4.19-py3.7-alpine` | 4.19 | 3.7.7 | alpine
 `4.19-py3.6` | 4.19 | 3.6.10 | buster
 `4.19-py3.6-stretch` | 4.19 | 3.6.10 | stretch
 `4.19-py3.6-alpine` | 4.19 | 3.6.10 | alpine
@@ -32,9 +32,9 @@ Tag | pgAdmin version | Python version | Distro
 `4.19-py3.5-alpine` | 4.19 | 3.5.9 | alpine
 `4.18-py3.8` | 4.18 | 3.8.2 | buster
 `4.18-py3.8-alpine` | 4.18 | 3.8.2 | alpine
-`4.18-py3.7` | 4.18 | 3.7.6 | buster
-`4.18-py3.7-stretch` | 4.18 | 3.7.6 | stretch
-`4.18-py3.7-alpine` | 4.18 | 3.7.6 | alpine
+`4.18-py3.7` | 4.18 | 3.7.7 | buster
+`4.18-py3.7-stretch` | 4.18 | 3.7.7 | stretch
+`4.18-py3.7-alpine` | 4.18 | 3.7.7 | alpine
 `4.18-py3.6` | 4.18 | 3.6.10 | buster
 `4.18-py3.6-stretch` | 4.18 | 3.6.10 | stretch
 `4.18-py3.6-alpine` | 4.18 | 3.6.10 | alpine
@@ -43,9 +43,9 @@ Tag | pgAdmin version | Python version | Distro
 `4.18-py3.5-alpine` | 4.18 | 3.5.9 | alpine
 `4.17-py3.8` | 4.17 | 3.8.2 | buster
 `4.17-py3.8-alpine` | 4.17 | 3.8.2 | alpine
-`4.17-py3.7` | 4.17 | 3.7.6 | buster
-`4.17-py3.7-stretch` | 4.17 | 3.7.6 | stretch
-`4.17-py3.7-alpine` | 4.17 | 3.7.6 | alpine
+`4.17-py3.7` | 4.17 | 3.7.7 | buster
+`4.17-py3.7-stretch` | 4.17 | 3.7.7 | stretch
+`4.17-py3.7-alpine` | 4.17 | 3.7.7 | alpine
 `4.17-py3.6` | 4.17 | 3.6.10 | buster
 `4.17-py3.6-stretch` | 4.17 | 3.6.10 | stretch
 `4.17-py3.6-alpine` | 4.17 | 3.6.10 | alpine
@@ -53,7 +53,7 @@ Tag | pgAdmin version | Python version | Distro
 `4.17-py3.5-stretch` | 4.17 | 3.5.9 | stretch
 `4.17-py3.5-alpine` | 4.17 | 3.5.9 | alpine
 `4.16-py3.8-alpine` | 4.16 | 3.8.2 | alpine
-`4.16-py3.7-alpine` | 4.16 | 3.7.6 | alpine
+`4.16-py3.7-alpine` | 4.16 | 3.7.7 | alpine
 `4.16-py3.6-alpine` | 4.16 | 3.6.10 | alpine
 `4.16-py3.5-alpine` | 4.16 | 3.5.9 | alpine
 
