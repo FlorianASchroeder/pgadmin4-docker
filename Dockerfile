@@ -12,7 +12,7 @@ RUN addgroup --system --gid 51 pgadmin \
 
 # Install postgresql tools for backup/restore
 RUN apt update \
- && apt install -y postgresql-client \
+ && apt install -y postgresql-client dos2unix \
  && apt autoremove -y \
  && apt clean
 
@@ -28,7 +28,8 @@ EXPOSE 5050
 COPY LICENSE config_distro.py /usr/local/lib/python3.8/site-packages/pgadmin4/
 COPY entrypoint.sh /usr/local/bin/
 
-RUN chmod ug=rwx /usr/local/bin/entrypoint.sh
+RUN chmod ug=rwx /usr/local/bin/entrypoint.sh \
+ && dos2unix /usr/local/bin/entrypoint.sh
 
 USER pgadmin:pgadmin
 ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
