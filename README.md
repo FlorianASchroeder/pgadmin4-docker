@@ -19,17 +19,6 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 
 Tag | pgAdmin version | Python version | Distro
 --- | --- | --- | ---
-`4.19-py3.8` | 4.19 | 3.8.3 | buster
-`4.19-py3.8-alpine` | 4.19 | 3.8.3 | alpine
-`4.19-py3.7` | 4.19 | 3.7.7 | buster
-`4.19-py3.7-stretch` | 4.19 | 3.7.7 | stretch
-`4.19-py3.7-alpine` | 4.19 | 3.7.7 | alpine
-`4.19-py3.6` | 4.19 | 3.6.10 | buster
-`4.19-py3.6-stretch` | 4.19 | 3.6.10 | stretch
-`4.19-py3.6-alpine` | 4.19 | 3.6.10 | alpine
-`4.19-py3.5` | 4.19 | 3.5.9 | buster
-`4.19-py3.5-stretch` | 4.19 | 3.5.9 | stretch
-`4.19-py3.5-alpine` | 4.19 | 3.5.9 | alpine
 `4.18-py3.8` | 4.18 | 3.8.3 | buster
 `4.18-py3.8-alpine` | 4.18 | 3.8.3 | alpine
 `4.18-py3.7` | 4.18 | 3.7.7 | buster
