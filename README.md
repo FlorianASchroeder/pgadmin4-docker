@@ -2,7 +2,7 @@
 [![DockerBuild](https://img.shields.io/docker/cloud/build/chinaboeller/pgadmin4.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
 [![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square&logo=circleci)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
 
-Last updated by bot: 2020-07-22
+Last updated by bot: 2020-08-18
 
 # pgAdmin 4
 
@@ -21,40 +21,40 @@ Tag | pgAdmin version | Python version | Distro
 --- | --- | --- | ---
 `4.19-py3.8` | 4.19 | 3.8.5 | buster
 `4.19-py3.8-alpine` | 4.19 | 3.8.5 | alpine
-`4.19-py3.7` | 4.19 | 3.7.8 | buster
-`4.19-py3.7-stretch` | 4.19 | 3.7.8 | stretch
-`4.19-py3.7-alpine` | 4.19 | 3.7.8 | alpine
-`4.19-py3.6` | 4.19 | 3.6.11 | buster
-`4.19-py3.6-stretch` | 4.19 | 3.6.11 | stretch
-`4.19-py3.6-alpine` | 4.19 | 3.6.11 | alpine
+`4.19-py3.7` | 4.19 | 3.7.9 | buster
+`4.19-py3.7-stretch` | 4.19 | 3.7.9 | stretch
+`4.19-py3.7-alpine` | 4.19 | 3.7.9 | alpine
+`4.19-py3.6` | 4.19 | 3.6.12 | buster
+`4.19-py3.6-stretch` | 4.19 | 3.6.12 | stretch
+`4.19-py3.6-alpine` | 4.19 | 3.6.12 | alpine
 `4.19-py3.5` | 4.19 | 3.5.9 | buster
 `4.19-py3.5-stretch` | 4.19 | 3.5.9 | stretch
 `4.19-py3.5-alpine` | 4.19 | 3.5.9 | alpine
 `4.18-py3.8` | 4.18 | 3.8.5 | buster
 `4.18-py3.8-alpine` | 4.18 | 3.8.5 | alpine
-`4.18-py3.7` | 4.18 | 3.7.8 | buster
-`4.18-py3.7-stretch` | 4.18 | 3.7.8 | stretch
-`4.18-py3.7-alpine` | 4.18 | 3.7.8 | alpine
-`4.18-py3.6` | 4.18 | 3.6.11 | buster
-`4.18-py3.6-stretch` | 4.18 | 3.6.11 | stretch
-`4.18-py3.6-alpine` | 4.18 | 3.6.11 | alpine
+`4.18-py3.7` | 4.18 | 3.7.9 | buster
+`4.18-py3.7-stretch` | 4.18 | 3.7.9 | stretch
+`4.18-py3.7-alpine` | 4.18 | 3.7.9 | alpine
+`4.18-py3.6` | 4.18 | 3.6.12 | buster
+`4.18-py3.6-stretch` | 4.18 | 3.6.12 | stretch
+`4.18-py3.6-alpine` | 4.18 | 3.6.12 | alpine
 `4.18-py3.5` | 4.18 | 3.5.9 | buster
 `4.18-py3.5-stretch` | 4.18 | 3.5.9 | stretch
 `4.18-py3.5-alpine` | 4.18 | 3.5.9 | alpine
 `4.17-py3.8` | 4.17 | 3.8.5 | buster
 `4.17-py3.8-alpine` | 4.17 | 3.8.5 | alpine
-`4.17-py3.7` | 4.17 | 3.7.8 | buster
-`4.17-py3.7-stretch` | 4.17 | 3.7.8 | stretch
-`4.17-py3.7-alpine` | 4.17 | 3.7.8 | alpine
-`4.17-py3.6` | 4.17 | 3.6.11 | buster
-`4.17-py3.6-stretch` | 4.17 | 3.6.11 | stretch
-`4.17-py3.6-alpine` | 4.17 | 3.6.11 | alpine
+`4.17-py3.7` | 4.17 | 3.7.9 | buster
+`4.17-py3.7-stretch` | 4.17 | 3.7.9 | stretch
+`4.17-py3.7-alpine` | 4.17 | 3.7.9 | alpine
+`4.17-py3.6` | 4.17 | 3.6.12 | buster
+`4.17-py3.6-stretch` | 4.17 | 3.6.12 | stretch
+`4.17-py3.6-alpine` | 4.17 | 3.6.12 | alpine
 `4.17-py3.5` | 4.17 | 3.5.9 | buster
 `4.17-py3.5-stretch` | 4.17 | 3.5.9 | stretch
 `4.17-py3.5-alpine` | 4.17 | 3.5.9 | alpine
 `4.16-py3.8-alpine` | 4.16 | 3.8.5 | alpine
-`4.16-py3.7-alpine` | 4.16 | 3.7.8 | alpine
-`4.16-py3.6-alpine` | 4.16 | 3.6.11 | alpine
+`4.16-py3.7-alpine` | 4.16 | 3.7.9 | alpine
+`4.16-py3.6-alpine` | 4.16 | 3.6.12 | alpine
 `4.16-py3.5-alpine` | 4.16 | 3.5.9 | alpine
 
 Lovely! These tags are kept updated automatically (when new minor or patch version are released) by `build_versions.py` which is run twice a day on CircleCI.
