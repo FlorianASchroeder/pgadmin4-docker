@@ -16,10 +16,10 @@ from requests_html import HTMLSession
 
 DOCKER_IMAGE_NAME = "chinaboeller/pgadmin4"
 VERSIONS_PATH = Path("versions.json")
-DEFAULT_DISTRO = "buster"
-DISTROS = ["buster", "stretch", "alpine"]
-DEFAULT_DISTROS = ["alpine", "buster", "stretch"]
-DISTRO_TEMPLATE = {'buster': 'debian', 'stretch': 'debian', 'alpine': 'alpine'}
+DEFAULT_DISTRO = "bullseye"
+DISTROS = ["bullseye", "buster", "stretch", "alpine"]
+DEFAULT_DISTROS = ["alpine", "buster", "stretch", "bullseye"]
+DISTRO_TEMPLATE = {'buster': 'debian', 'stretch': 'debian', 'bullseye': 'debian','alpine': 'alpine'}
 
 todays_date = datetime.utcnow().date().isoformat()
 
