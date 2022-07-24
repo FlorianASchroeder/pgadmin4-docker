@@ -41,7 +41,7 @@ def _latest_patch(tags, ver, patch_pattern, distro):
 def scrape_supported_python_versions():
     """Scrape supported python versions (risky)"""
     versions = []
-    version_table_selector = "#status-of-python-branches table"
+    version_table_selector = "#status-of-python-versions table"
 
     r = HTMLSession().get("https://devguide.python.org/versions/")
     version_table = r.html.find(version_table_selector, first=True)
