@@ -43,7 +43,7 @@ def scrape_supported_python_versions():
     versions = []
     version_table_selector = "#status-of-python-branches table"
 
-    r = HTMLSession().get("https://devguide.python.org/")
+    r = HTMLSession().get("https://devguide.python.org/versions/")
     version_table = r.html.find(version_table_selector, first=True)
     for ver in version_table.find("tbody tr"):
         branch, _, _, first_release, end_of_life, _ = [v.text for v in ver.find("td")]
