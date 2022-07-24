@@ -121,9 +121,6 @@ def version_combinations(pgadmin_versions, python_versions):
         for pg in pgadmin_versions:
             if pg["release_date"] < p["start_date"] or pg["release_date"] > p["end_date"] :
                 continue
-            if not (pg["version"].startswith("4.1") and (pg["version"] >= "4.17" or (pg["version"] >= "4.16" and p["distro"] == 'alpine'))):
-                # for now: save time on outdates images
-                continue
             distro = f'-{p["distro"]}' if p["distro"] != DEFAULT_DISTRO else ""
             key = f'{pg["version"]}-py{p["key"]}{distro}'
             versions.append(
