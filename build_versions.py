@@ -194,6 +194,7 @@ def build_new_or_updated(current_versions, versions, dry_run=False, debug=False)
         exit(1)
 
     # Build, tag and push images
+    failed_builds = []
     for version in new_or_updated:
         dockerfile = render_dockerfile(version)
         # docker build wants bytes
@@ -210,22 +211,27 @@ def build_new_or_updated(current_versions, versions, dry_run=False, debug=False)
                 end="",
                 flush=True,
             )
-            if not dry_run:
-                docker_client.images.build(path=os.getcwd(), dockerfile="tmp.Dockerfile", tag=tag, rm=True, pull=True)
-            if debug:
-                with Path(f"debug-{version['key']}.Dockerfile").open("w") as debug_file:
-                    debug_file.write(fileobj.read().decode("utf-8"))
-            print(f" pushing...", flush=True)
-            if not dry_run:
-                retries = 3
-                while retries > 0:
-                    try:
-                        docker_client.images.push(DOCKER_IMAGE_NAME, version["key"])
-                        retries = 0
-                    except requests.exceptions.ConnectionError as e:
-                        print(e)
-                        retries -= 1
-                        print(f"Retrying... {retries} retries left")
+            try:
+                if not dry_run:
+                    docker_client.images.build(path=os.getcwd(), dockerfile="tmp.Dockerfile", tag=tag, rm=True, pull=True)
+                if debug:
+                    with Path(f"debug-{version['key']}.Dockerfile").open("w") as debug_file:
+                        debug_file.write(fileobj.read().decode("utf-8"))
+                print(f" pushing...", flush=True)
+                if not dry_run:
+                    retries = 3
+                    while retries > 0:
+                        try:
+                            docker_client.images.push(DOCKER_IMAGE_NAME, version["key"])
+                            retries = 0
+                        except requests.exceptions.ConnectionError as e:
+                            print(e)
+                            retries -= 1
+                            print(f"Retrying... {retries} retries left")
+            except docker.errors.BuildError as e:
+                print(f"Failed building {version}, skipping...")
+                failed_builds.append(version)
+    return failed_builds
                         
 
 
@@ -285,7 +291,7 @@ def main(distros, dry_run, debug):
     update_readme_tags_table(versions, dry_run)
 
     # Build tag and release docker images
-    build_new_or_updated(current_versions, versions, dry_run, debug)
+    failed_builds = build_new_or_updated(current_versions, versions, dry_run, debug)
     save_latest_dockerfile(pgadmin_versions)
 
     # FIXME(perf): Generate a CircleCI config file with a workflow (parallell) and trigger this workflow via the API.
