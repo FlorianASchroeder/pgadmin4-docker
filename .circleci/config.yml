@@ -10,7 +10,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "7a:af:d8:ab:04:12:fd:f9:f9:5c:f4:ac:6c:b6:8b:25"
+            - "68:53:13:da:3a:4f:e0:89:28:e1:43:19:9b:43:6b:ac"
       - checkout
       - run:
           name: Verify on master branch
@@ -36,7 +36,7 @@ jobs:
     steps:
       - add_ssh_keys:
           fingerprints:
-            - "7a:af:d8:ab:04:12:fd:f9:f9:5c:f4:ac:6c:b6:8b:25"
+            - "68:53:13:da:3a:4f:e0:89:28:e1:43:19:9b:43:6b:ac"
       - checkout
       - setup_remote_docker
       - restore_cache:
