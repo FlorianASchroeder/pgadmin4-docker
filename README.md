@@ -2,7 +2,7 @@
 [![DockerBuild](https://img.shields.io/docker/cloud/build/chinaboeller/pgadmin4.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
 [![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square&logo=circleci)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
 
-Last updated by bot: 2022-07-28
+Last updated by bot: 2022-08-03
 
 # pgAdmin 4
 
@@ -19,9 +19,9 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 
 Tag | pgAdmin version | Python version | Distro
 --- | --- | --- | ---
-`6.12-py3.10` | 6.12 | 3.10.5 | bullseye
-`6.12-py3.10-buster` | 6.12 | 3.10.5 | buster
-`6.12-py3.10-alpine` | 6.12 | 3.10.5 | alpine
+`6.12-py3.10` | 6.12 | 3.10.6 | bullseye
+`6.12-py3.10-buster` | 6.12 | 3.10.6 | buster
+`6.12-py3.10-alpine` | 6.12 | 3.10.6 | alpine
 `6.12-py3.9` | 6.12 | 3.9.13 | bullseye
 `6.12-py3.9-buster` | 6.12 | 3.9.13 | buster
 `6.12-py3.9-alpine` | 6.12 | 3.9.13 | alpine
@@ -32,9 +32,9 @@ Tag | pgAdmin version | Python version | Distro
 `6.12-py3.7-buster` | 6.12 | 3.7.13 | buster
 `6.12-py3.7-alpine` | 6.12 | 3.7.13 | alpine
 `6.12-py3.7-stretch` | 6.12 | 3.7.11 | stretch
-`6.11-py3.10` | 6.11 | 3.10.5 | bullseye
-`6.11-py3.10-buster` | 6.11 | 3.10.5 | buster
-`6.11-py3.10-alpine` | 6.11 | 3.10.5 | alpine
+`6.11-py3.10` | 6.11 | 3.10.6 | bullseye
+`6.11-py3.10-buster` | 6.11 | 3.10.6 | buster
+`6.11-py3.10-alpine` | 6.11 | 3.10.6 | alpine
 `6.11-py3.9` | 6.11 | 3.9.13 | bullseye
 `6.11-py3.9-buster` | 6.11 | 3.9.13 | buster
 `6.11-py3.9-alpine` | 6.11 | 3.9.13 | alpine
@@ -45,9 +45,9 @@ Tag | pgAdmin version | Python version | Distro
 `6.11-py3.7-buster` | 6.11 | 3.7.13 | buster
 `6.11-py3.7-alpine` | 6.11 | 3.7.13 | alpine
 `6.11-py3.7-stretch` | 6.11 | 3.7.11 | stretch
-`6.10-py3.10` | 6.10 | 3.10.5 | bullseye
-`6.10-py3.10-buster` | 6.10 | 3.10.5 | buster
-`6.10-py3.10-alpine` | 6.10 | 3.10.5 | alpine
+`6.10-py3.10` | 6.10 | 3.10.6 | bullseye
+`6.10-py3.10-buster` | 6.10 | 3.10.6 | buster
+`6.10-py3.10-alpine` | 6.10 | 3.10.6 | alpine
 `6.10-py3.9` | 6.10 | 3.9.13 | bullseye
 `6.10-py3.9-buster` | 6.10 | 3.9.13 | buster
 `6.10-py3.9-alpine` | 6.10 | 3.9.13 | alpine
@@ -58,9 +58,9 @@ Tag | pgAdmin version | Python version | Distro
 `6.10-py3.7-buster` | 6.10 | 3.7.13 | buster
 `6.10-py3.7-alpine` | 6.10 | 3.7.13 | alpine
 `6.10-py3.7-stretch` | 6.10 | 3.7.11 | stretch
-`6.9-py3.10` | 6.9 | 3.10.5 | bullseye
-`6.9-py3.10-buster` | 6.9 | 3.10.5 | buster
-`6.9-py3.10-alpine` | 6.9 | 3.10.5 | alpine
+`6.9-py3.10` | 6.9 | 3.10.6 | bullseye
+`6.9-py3.10-buster` | 6.9 | 3.10.6 | buster
+`6.9-py3.10-alpine` | 6.9 | 3.10.6 | alpine
 `6.9-py3.9` | 6.9 | 3.9.13 | bullseye
 `6.9-py3.9-buster` | 6.9 | 3.9.13 | buster
 `6.9-py3.9-alpine` | 6.9 | 3.9.13 | alpine
