@@ -45,8 +45,20 @@ def scrape_supported_python_versions():
 
     r = HTMLSession().get("https://devguide.python.org/versions/")
     version_table = r.html.find(version_table_selector, first=True)
+
+    # match development information with latest downloadable release
+    _py_specific_release = ".download-list-widget li"
+    r = HTMLSession().get("https://www.python.org/downloads/")
+    spec_table = r.html.find(_py_specific_release)
+    _downloadable_versions = [li.find('span a', first=True).text.split(' ')[1] for li in spec_table]
+
     for ver in version_table.find("tbody tr"):
         branch, _, _, first_release, end_of_life, _ = [v.text for v in ver.find("td")]
+
+        _matching_version = list(filter(lambda d: d.startswith(branch), _downloadable_versions))
+        if _matching_version:
+            branch = _matching_version[0]
+
         versions.append({"version": branch, "start": first_release, "end": end_of_life})
 
     return versions
