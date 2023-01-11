@@ -27,10 +27,15 @@ todays_date = datetime.utcnow().date().isoformat()
 by_semver_key = cmp_to_key(semver.compare)
 
 
-def _fetch_tags(package):
+def _fetch_tags(package, supp_versions):
     # Fetch available docker tags
-    result = requests.get(f"https://registry.hub.docker.com/v1/repositories/{package}/tags")
-    return [r["name"] for r in result.json()]
+    _names = []
+    for _version in supp_versions:
+        result = requests.get(f"https://registry.hub.docker.com/v2/repositories/library/{package}/tags?"
+                              f"name={_version['version']}")
+        _names.extend([r["name"] for r in result.json()['results']])
+
+    return _names
 
 
 def _latest_patch(tags, ver, patch_pattern, distro):
@@ -101,9 +106,9 @@ def decide_python_versions(distros):
     python_patch_re = "|".join([r"^(\d+\.\d+\.\d+-{})$".format(distro) for distro in distros])
     python_wanted_tag_pattern = re.compile(python_patch_re)
 
-    tags = [tag for tag in _fetch_tags("python") if python_wanted_tag_pattern.match(tag)]
     # Skip unreleased and unsupported
     supported_versions = [v for v in scrape_supported_python_versions() if v["start"] <= todays_date <= v["end"]]
+    tags = [tag for tag in _fetch_tags("python", supported_versions) if python_wanted_tag_pattern.match(tag)]
 
     versions = []
     for supported_version in supported_versions:
