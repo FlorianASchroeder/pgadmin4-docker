@@ -31,9 +31,18 @@ def _fetch_tags(package, supp_versions):
     # Fetch available docker tags
     _names = []
     for _version in supp_versions:
-        result = requests.get(f"https://registry.hub.docker.com/v2/repositories/library/{package}/tags?"
-                              f"name={_version['version']}")
-        _names.extend([r["name"] for r in result.json()['results']])
+
+        _next_page = True
+        _page = 1
+        while _next_page:
+            print(f"Fetching docker tags for {package} {_version['latest_sw']} , page {_page}")
+            result = requests.get(f"https://registry.hub.docker.com/v2/repositories/library/{package}/tags?"
+                                  f"name={_version['latest_sw']}&page={_page}")
+            _json = result.json()
+            if not _json['next']:
+                _next_page = False
+            _page += 1
+            _names.extend([r["name"] for r in _json['results']])
 
     return _names
 
@@ -60,11 +69,13 @@ def scrape_supported_python_versions():
     for ver in version_table.find("tbody tr"):
         branch, _, _, first_release, end_of_life, _ = [v.text for v in ver.find("td")]
 
+        print(f"Found Python branch: {branch}")
         _matching_version = list(filter(lambda d: d.startswith(branch), _downloadable_versions))
+        _latest_sw = branch
         if _matching_version:
-            branch = _matching_version[0]
+            _latest_sw = _matching_version[0]
 
-        versions.append({"version": branch, "start": first_release, "end": end_of_life})
+        versions.append({"version": branch, "latest_sw": _latest_sw, "start": first_release, "end": end_of_life})
 
     return versions
 
