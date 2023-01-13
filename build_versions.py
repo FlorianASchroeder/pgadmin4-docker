@@ -262,8 +262,6 @@ def build_new_or_updated(current_versions, versions, dry_run=False, debug=False)
                 print(f"Failed building {version}, skipping...")
                 failed_builds.append(version)
     return failed_builds
-                        
-
 
 
 def update_readme_tags_table(versions, dry_run=False):
@@ -274,9 +272,9 @@ def update_readme_tags_table(versions, dry_run=False):
     headings = ["Tag", "pgAdmin version", "Python version", "Distro"]
     rows = []
     for v in versions:
-        rows.append([f"`{v['key']}`", v["pgadmin"], v["python_canonical"], v["distro"]])
+        rows.append([f"| `{v['key']}`", v["pgadmin"], v["python_canonical"], f"{v['distro']} |"])
 
-    head = f"{' | '.join(headings)}\n{' | '.join(['---' for h in headings])}"
+    head = f"| {' | '.join(headings)} |\n| {' | '.join(['---' for h in headings])} |"
     body = "\n".join([" | ".join(row) for row in rows])
     table = f"{head}\n{body}\n"
 
