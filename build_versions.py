@@ -17,9 +17,9 @@ from requests_html import HTMLSession
 DOCKER_IMAGE_NAME = "chinaboeller/pgadmin4"
 VERSIONS_PATH = Path("versions.json")
 DEFAULT_DISTRO = "bullseye"
-DISTROS = ["bullseye", "buster", "stretch", "alpine"]
-DEFAULT_DISTROS = ["alpine", "buster", "stretch", "bullseye"]
-DISTRO_TEMPLATE = {'buster': 'debian', 'stretch': 'debian', 'bullseye': 'debian','alpine': 'alpine'}
+DISTROS = ["bullseye", "buster", "alpine"]
+DEFAULT_DISTROS = ["alpine", "buster", "bullseye"]
+DISTRO_TEMPLATE = {'buster': 'debian', 'bullseye': 'debian','alpine': 'alpine'}
 
 todays_date = datetime.utcnow().date().isoformat()
 
@@ -99,7 +99,7 @@ def scrape_supported_pgadmin_versions():
             file, release_date, file_size = [r.text for r in row.find("td")]
             if not file.endswith('whl'):
                 continue
-            if min_ver.lstrip('v') < '6.0':
+            if min_ver.lstrip('v') < '6.18':
                 continue
             versions.append({
                 "version_str": min_ver,
