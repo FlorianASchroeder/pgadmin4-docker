@@ -99,7 +99,7 @@ def scrape_supported_pgadmin_versions():
             file, release_date, file_size = [r.text for r in row.find("td")]
             if not file.endswith('whl'):
                 continue
-            if min_ver.lstrip('v') < '6.0':
+            if min_ver.lstrip('v') < '6.18':
                 continue
             versions.append({
                 "version_str": min_ver,
