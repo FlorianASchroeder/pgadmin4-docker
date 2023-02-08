@@ -2,7 +2,7 @@
 [![DockerBuild](https://img.shields.io/docker/cloud/build/chinaboeller/pgadmin4.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
 [![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square&logo=circleci)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
 
-Last updated by bot: 2022-08-26
+Last updated by bot: 2023-02-08
 
 # pgAdmin 4
 
@@ -17,73 +17,35 @@ port using `-p 80:5050`.
 ## Tags
 To use a specific combination of pgAdmin 4 and python see the following table of available image tags.
 
-Tag | pgAdmin version | Python version | Distro
---- | --- | --- | ---
-`6.13-py3.10` | 6.13 | 3.10.6 | bullseye
-`6.13-py3.10-buster` | 6.13 | 3.10.6 | buster
-`6.13-py3.10-alpine` | 6.13 | 3.10.6 | alpine
-`6.13-py3.9` | 6.13 | 3.9.13 | bullseye
-`6.13-py3.9-buster` | 6.13 | 3.9.13 | buster
-`6.13-py3.9-alpine` | 6.13 | 3.9.13 | alpine
-`6.13-py3.8` | 6.13 | 3.8.13 | bullseye
-`6.13-py3.8-buster` | 6.13 | 3.8.13 | buster
-`6.13-py3.8-alpine` | 6.13 | 3.8.13 | alpine
-`6.13-py3.7` | 6.13 | 3.7.13 | bullseye
-`6.13-py3.7-buster` | 6.13 | 3.7.13 | buster
-`6.13-py3.7-alpine` | 6.13 | 3.7.13 | alpine
-`6.13-py3.7-stretch` | 6.13 | 3.7.11 | stretch
-`6.12-py3.10` | 6.12 | 3.10.6 | bullseye
-`6.12-py3.10-buster` | 6.12 | 3.10.6 | buster
-`6.12-py3.10-alpine` | 6.12 | 3.10.6 | alpine
-`6.12-py3.9` | 6.12 | 3.9.13 | bullseye
-`6.12-py3.9-buster` | 6.12 | 3.9.13 | buster
-`6.12-py3.9-alpine` | 6.12 | 3.9.13 | alpine
-`6.12-py3.8` | 6.12 | 3.8.13 | bullseye
-`6.12-py3.8-buster` | 6.12 | 3.8.13 | buster
-`6.12-py3.8-alpine` | 6.12 | 3.8.13 | alpine
-`6.12-py3.7` | 6.12 | 3.7.13 | bullseye
-`6.12-py3.7-buster` | 6.12 | 3.7.13 | buster
-`6.12-py3.7-alpine` | 6.12 | 3.7.13 | alpine
-`6.12-py3.7-stretch` | 6.12 | 3.7.11 | stretch
-`6.11-py3.10` | 6.11 | 3.10.6 | bullseye
-`6.11-py3.10-buster` | 6.11 | 3.10.6 | buster
-`6.11-py3.10-alpine` | 6.11 | 3.10.6 | alpine
-`6.11-py3.9` | 6.11 | 3.9.13 | bullseye
-`6.11-py3.9-buster` | 6.11 | 3.9.13 | buster
-`6.11-py3.9-alpine` | 6.11 | 3.9.13 | alpine
-`6.11-py3.8` | 6.11 | 3.8.13 | bullseye
-`6.11-py3.8-buster` | 6.11 | 3.8.13 | buster
-`6.11-py3.8-alpine` | 6.11 | 3.8.13 | alpine
-`6.11-py3.7` | 6.11 | 3.7.13 | bullseye
-`6.11-py3.7-buster` | 6.11 | 3.7.13 | buster
-`6.11-py3.7-alpine` | 6.11 | 3.7.13 | alpine
-`6.11-py3.7-stretch` | 6.11 | 3.7.11 | stretch
-`6.10-py3.10` | 6.10 | 3.10.6 | bullseye
-`6.10-py3.10-buster` | 6.10 | 3.10.6 | buster
-`6.10-py3.10-alpine` | 6.10 | 3.10.6 | alpine
-`6.10-py3.9` | 6.10 | 3.9.13 | bullseye
-`6.10-py3.9-buster` | 6.10 | 3.9.13 | buster
-`6.10-py3.9-alpine` | 6.10 | 3.9.13 | alpine
-`6.10-py3.8` | 6.10 | 3.8.13 | bullseye
-`6.10-py3.8-buster` | 6.10 | 3.8.13 | buster
-`6.10-py3.8-alpine` | 6.10 | 3.8.13 | alpine
-`6.10-py3.7` | 6.10 | 3.7.13 | bullseye
-`6.10-py3.7-buster` | 6.10 | 3.7.13 | buster
-`6.10-py3.7-alpine` | 6.10 | 3.7.13 | alpine
-`6.10-py3.7-stretch` | 6.10 | 3.7.11 | stretch
-`6.9-py3.10` | 6.9 | 3.10.6 | bullseye
-`6.9-py3.10-buster` | 6.9 | 3.10.6 | buster
-`6.9-py3.10-alpine` | 6.9 | 3.10.6 | alpine
-`6.9-py3.9` | 6.9 | 3.9.13 | bullseye
-`6.9-py3.9-buster` | 6.9 | 3.9.13 | buster
-`6.9-py3.9-alpine` | 6.9 | 3.9.13 | alpine
-`6.9-py3.8` | 6.9 | 3.8.13 | bullseye
-`6.9-py3.8-buster` | 6.9 | 3.8.13 | buster
-`6.9-py3.8-alpine` | 6.9 | 3.8.13 | alpine
-`6.9-py3.7` | 6.9 | 3.7.13 | bullseye
-`6.9-py3.7-buster` | 6.9 | 3.7.13 | buster
-`6.9-py3.7-alpine` | 6.9 | 3.7.13 | alpine
-`6.9-py3.7-stretch` | 6.9 | 3.7.11 | stretch
+| Tag | pgAdmin version | Python version | Distro |
+| --- | --- | --- | --- |
+| `6.19-py3.9` | 6.19 | 3.9.16 | bullseye |
+| `6.19-py3.9-buster` | 6.19 | 3.9.16 | buster |
+| `6.19-py3.9-alpine` | 6.19 | 3.9.16 | alpine |
+| `6.19-py3.8` | 6.19 | 3.8.16 | bullseye |
+| `6.19-py3.8-buster` | 6.19 | 3.8.16 | buster |
+| `6.19-py3.8-alpine` | 6.19 | 3.8.16 | alpine |
+| `6.19-py3.7` | 6.19 | 3.7.16 | bullseye |
+| `6.19-py3.7-buster` | 6.19 | 3.7.16 | buster |
+| `6.19-py3.7-alpine` | 6.19 | 3.7.16 | alpine |
+| `6.18-py3.9` | 6.18 | 3.9.16 | bullseye |
+| `6.18-py3.9-buster` | 6.18 | 3.9.16 | buster |
+| `6.18-py3.9-alpine` | 6.18 | 3.9.16 | alpine |
+| `6.18-py3.8` | 6.18 | 3.8.16 | bullseye |
+| `6.18-py3.8-buster` | 6.18 | 3.8.16 | buster |
+| `6.18-py3.8-alpine` | 6.18 | 3.8.16 | alpine |
+| `6.18-py3.7` | 6.18 | 3.7.16 | bullseye |
+| `6.18-py3.7-buster` | 6.18 | 3.7.16 | buster |
+| `6.18-py3.7-alpine` | 6.18 | 3.7.16 | alpine |
+| `6.9-py3.9` | 6.9 | 3.9.16 | bullseye |
+| `6.9-py3.9-buster` | 6.9 | 3.9.16 | buster |
+| `6.9-py3.9-alpine` | 6.9 | 3.9.16 | alpine |
+| `6.9-py3.8` | 6.9 | 3.8.16 | bullseye |
+| `6.9-py3.8-buster` | 6.9 | 3.8.16 | buster |
+| `6.9-py3.8-alpine` | 6.9 | 3.8.16 | alpine |
+| `6.9-py3.7` | 6.9 | 3.7.16 | bullseye |
+| `6.9-py3.7-buster` | 6.9 | 3.7.16 | buster |
+| `6.9-py3.7-alpine` | 6.9 | 3.7.16 | alpine |
 
 Lovely! These tags are kept updated automatically (when new minor or patch version are released) by `build_versions.py` which is run twice a day on CircleCI.
 
