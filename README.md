@@ -2,7 +2,7 @@
 [![DockerBuild](https://img.shields.io/docker/cloud/build/chinaboeller/pgadmin4.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
 [![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square&logo=circleci)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
 
-Last updated by bot: 2023-03-10
+Last updated by bot: 2023-04-05
 
 # pgAdmin 4
 
@@ -19,12 +19,6 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 
 | Tag | pgAdmin version | Python version | Distro |
 | --- | --- | --- | --- |
-| `6.21-py3.11` | 6.21 | 3.11.2 | bullseye |
-| `6.21-py3.11-buster` | 6.21 | 3.11.2 | buster |
-| `6.21-py3.11-alpine` | 6.21 | 3.11.2 | alpine |
-| `6.21-py3.10` | 6.21 | 3.10.10 | bullseye |
-| `6.21-py3.10-buster` | 6.21 | 3.10.10 | buster |
-| `6.21-py3.10-alpine` | 6.21 | 3.10.10 | alpine |
 | `6.21-py3.9` | 6.21 | 3.9.16 | bullseye |
 | `6.21-py3.9-buster` | 6.21 | 3.9.16 | buster |
 | `6.21-py3.9-alpine` | 6.21 | 3.9.16 | alpine |
@@ -34,12 +28,6 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `6.21-py3.7` | 6.21 | 3.7.16 | bullseye |
 | `6.21-py3.7-buster` | 6.21 | 3.7.16 | buster |
 | `6.21-py3.7-alpine` | 6.21 | 3.7.16 | alpine |
-| `6.20-py3.11` | 6.20 | 3.11.2 | bullseye |
-| `6.20-py3.11-buster` | 6.20 | 3.11.2 | buster |
-| `6.20-py3.11-alpine` | 6.20 | 3.11.2 | alpine |
-| `6.20-py3.10` | 6.20 | 3.10.10 | bullseye |
-| `6.20-py3.10-buster` | 6.20 | 3.10.10 | buster |
-| `6.20-py3.10-alpine` | 6.20 | 3.10.10 | alpine |
 | `6.20-py3.9` | 6.20 | 3.9.16 | bullseye |
 | `6.20-py3.9-buster` | 6.20 | 3.9.16 | buster |
 | `6.20-py3.9-alpine` | 6.20 | 3.9.16 | alpine |
@@ -49,12 +37,6 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `6.20-py3.7` | 6.20 | 3.7.16 | bullseye |
 | `6.20-py3.7-buster` | 6.20 | 3.7.16 | buster |
 | `6.20-py3.7-alpine` | 6.20 | 3.7.16 | alpine |
-| `6.19-py3.11` | 6.19 | 3.11.2 | bullseye |
-| `6.19-py3.11-buster` | 6.19 | 3.11.2 | buster |
-| `6.19-py3.11-alpine` | 6.19 | 3.11.2 | alpine |
-| `6.19-py3.10` | 6.19 | 3.10.10 | bullseye |
-| `6.19-py3.10-buster` | 6.19 | 3.10.10 | buster |
-| `6.19-py3.10-alpine` | 6.19 | 3.10.10 | alpine |
 | `6.19-py3.9` | 6.19 | 3.9.16 | bullseye |
 | `6.19-py3.9-buster` | 6.19 | 3.9.16 | buster |
 | `6.19-py3.9-alpine` | 6.19 | 3.9.16 | alpine |
@@ -64,12 +46,6 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `6.19-py3.7` | 6.19 | 3.7.16 | bullseye |
 | `6.19-py3.7-buster` | 6.19 | 3.7.16 | buster |
 | `6.19-py3.7-alpine` | 6.19 | 3.7.16 | alpine |
-| `6.18-py3.11` | 6.18 | 3.11.2 | bullseye |
-| `6.18-py3.11-buster` | 6.18 | 3.11.2 | buster |
-| `6.18-py3.11-alpine` | 6.18 | 3.11.2 | alpine |
-| `6.18-py3.10` | 6.18 | 3.10.10 | bullseye |
-| `6.18-py3.10-buster` | 6.18 | 3.10.10 | buster |
-| `6.18-py3.10-alpine` | 6.18 | 3.10.10 | alpine |
 | `6.18-py3.9` | 6.18 | 3.9.16 | bullseye |
 | `6.18-py3.9-buster` | 6.18 | 3.9.16 | buster |
 | `6.18-py3.9-alpine` | 6.18 | 3.9.16 | alpine |
@@ -79,9 +55,6 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `6.18-py3.7` | 6.18 | 3.7.16 | bullseye |
 | `6.18-py3.7-buster` | 6.18 | 3.7.16 | buster |
 | `6.18-py3.7-alpine` | 6.18 | 3.7.16 | alpine |
-| `6.9-py3.10` | 6.9 | 3.10.10 | bullseye |
-| `6.9-py3.10-buster` | 6.9 | 3.10.10 | buster |
-| `6.9-py3.10-alpine` | 6.9 | 3.10.10 | alpine |
 | `6.9-py3.9` | 6.9 | 3.9.16 | bullseye |
 | `6.9-py3.9-buster` | 6.9 | 3.9.16 | buster |
 | `6.9-py3.9-alpine` | 6.9 | 3.9.16 | alpine |
