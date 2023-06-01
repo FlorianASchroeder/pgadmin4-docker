@@ -1,5 +1,5 @@
 # python: 3.11.3
-# pgadmin: 7.1.0
+# pgadmin: 7.2.0
 FROM python:3.11.3-bullseye
 MAINTAINER Florian Schroeder <schroeder.florian@gmail.com>
 
@@ -16,11 +16,11 @@ RUN apt update \
  && apt autoremove -y \
  && apt clean
 
-ENV PGADMIN_VERSION=7.1
+ENV PGADMIN_VERSION=7.2
 ENV PYTHONDONTWRITEBYTECODE=1
 
 RUN pip install --upgrade --no-cache-dir pip \
- && echo "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v${PGADMIN_VERSION}/pip/pgadmin4-7.1-py3-none-any.whl" | pip install --no-cache-dir -r /dev/stdin \
+ && echo "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v${PGADMIN_VERSION}/pip/pgadmin4-7.2-py3-none-any.whl" | pip install --no-cache-dir -r /dev/stdin \
  && pip install --no-cache-dir --upgrade Flask-WTF
 
 EXPOSE 5050
