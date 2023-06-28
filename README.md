@@ -2,7 +2,7 @@
 [![DockerBuild](https://img.shields.io/docker/cloud/build/chinaboeller/pgadmin4.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
 [![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square&logo=circleci)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
 
-Last updated by bot: 2023-06-08
+Last updated by bot: 2023-06-28
 
 # pgAdmin 4
 
@@ -31,9 +31,6 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `7.3-py3.8` | 7.3 | 3.8.17 | bullseye |
 | `7.3-py3.8-buster` | 7.3 | 3.8.17 | buster |
 | `7.3-py3.8-alpine` | 7.3 | 3.8.17 | alpine |
-| `7.3-py3.7` | 7.3 | 3.7.17 | bullseye |
-| `7.3-py3.7-buster` | 7.3 | 3.7.17 | buster |
-| `7.3-py3.7-alpine` | 7.3 | 3.7.17 | alpine |
 | `7.2-py3.11` | 7.2 | 3.11.4 | bullseye |
 | `7.2-py3.11-buster` | 7.2 | 3.11.4 | buster |
 | `7.2-py3.11-alpine` | 7.2 | 3.11.4 | alpine |
@@ -46,9 +43,6 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `7.2-py3.8` | 7.2 | 3.8.17 | bullseye |
 | `7.2-py3.8-buster` | 7.2 | 3.8.17 | buster |
 | `7.2-py3.8-alpine` | 7.2 | 3.8.17 | alpine |
-| `7.2-py3.7` | 7.2 | 3.7.17 | bullseye |
-| `7.2-py3.7-buster` | 7.2 | 3.7.17 | buster |
-| `7.2-py3.7-alpine` | 7.2 | 3.7.17 | alpine |
 | `7.1-py3.11` | 7.1 | 3.11.4 | bullseye |
 | `7.1-py3.11-buster` | 7.1 | 3.11.4 | buster |
 | `7.1-py3.11-alpine` | 7.1 | 3.11.4 | alpine |
@@ -61,9 +55,6 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `7.1-py3.8` | 7.1 | 3.8.17 | bullseye |
 | `7.1-py3.8-buster` | 7.1 | 3.8.17 | buster |
 | `7.1-py3.8-alpine` | 7.1 | 3.8.17 | alpine |
-| `7.1-py3.7` | 7.1 | 3.7.17 | bullseye |
-| `7.1-py3.7-buster` | 7.1 | 3.7.17 | buster |
-| `7.1-py3.7-alpine` | 7.1 | 3.7.17 | alpine |
 | `7.0-py3.11` | 7.0 | 3.11.4 | bullseye |
 | `7.0-py3.11-buster` | 7.0 | 3.11.4 | buster |
 | `7.0-py3.11-alpine` | 7.0 | 3.11.4 | alpine |
@@ -76,9 +67,6 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `7.0-py3.8` | 7.0 | 3.8.17 | bullseye |
 | `7.0-py3.8-buster` | 7.0 | 3.8.17 | buster |
 | `7.0-py3.8-alpine` | 7.0 | 3.8.17 | alpine |
-| `7.0-py3.7` | 7.0 | 3.7.17 | bullseye |
-| `7.0-py3.7-buster` | 7.0 | 3.7.17 | buster |
-| `7.0-py3.7-alpine` | 7.0 | 3.7.17 | alpine |
 | `6.21-py3.11` | 6.21 | 3.11.4 | bullseye |
 | `6.21-py3.11-buster` | 6.21 | 3.11.4 | buster |
 | `6.21-py3.11-alpine` | 6.21 | 3.11.4 | alpine |
@@ -91,9 +79,6 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `6.21-py3.8` | 6.21 | 3.8.17 | bullseye |
 | `6.21-py3.8-buster` | 6.21 | 3.8.17 | buster |
 | `6.21-py3.8-alpine` | 6.21 | 3.8.17 | alpine |
-| `6.21-py3.7` | 6.21 | 3.7.17 | bullseye |
-| `6.21-py3.7-buster` | 6.21 | 3.7.17 | buster |
-| `6.21-py3.7-alpine` | 6.21 | 3.7.17 | alpine |
 
 Lovely! These tags are kept updated automatically (when new minor or patch version are released) by `build_versions.py` which is run twice a day on CircleCI.
 

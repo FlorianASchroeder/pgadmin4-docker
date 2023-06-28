@@ -121,36 +121,6 @@
       "distro": "alpine"
     },
     {
-      "key": "7.3-py3.7",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-bullseye",
-      "pgadmin": "7.3",
-      "pgadmin_canonical": "7.3.0",
-      "pgadmin_whl": "pgadmin4-7.3-py3-none-any.whl",
-      "distro": "bullseye"
-    },
-    {
-      "key": "7.3-py3.7-buster",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-buster",
-      "pgadmin": "7.3",
-      "pgadmin_canonical": "7.3.0",
-      "pgadmin_whl": "pgadmin4-7.3-py3-none-any.whl",
-      "distro": "buster"
-    },
-    {
-      "key": "7.3-py3.7-alpine",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-alpine",
-      "pgadmin": "7.3",
-      "pgadmin_canonical": "7.3.0",
-      "pgadmin_whl": "pgadmin4-7.3-py3-none-any.whl",
-      "distro": "alpine"
-    },
-    {
       "key": "7.2-py3.11",
       "python": "3.11",
       "python_canonical": "3.11.4",
@@ -265,36 +235,6 @@
       "python": "3.8",
       "python_canonical": "3.8.17",
       "python_image": "3.8.17-alpine",
-      "pgadmin": "7.2",
-      "pgadmin_canonical": "7.2.0",
-      "pgadmin_whl": "pgadmin4-7.2-py3-none-any.whl",
-      "distro": "alpine"
-    },
-    {
-      "key": "7.2-py3.7",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-bullseye",
-      "pgadmin": "7.2",
-      "pgadmin_canonical": "7.2.0",
-      "pgadmin_whl": "pgadmin4-7.2-py3-none-any.whl",
-      "distro": "bullseye"
-    },
-    {
-      "key": "7.2-py3.7-buster",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-buster",
-      "pgadmin": "7.2",
-      "pgadmin_canonical": "7.2.0",
-      "pgadmin_whl": "pgadmin4-7.2-py3-none-any.whl",
-      "distro": "buster"
-    },
-    {
-      "key": "7.2-py3.7-alpine",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-alpine",
       "pgadmin": "7.2",
       "pgadmin_canonical": "7.2.0",
       "pgadmin_whl": "pgadmin4-7.2-py3-none-any.whl",
@@ -421,36 +361,6 @@
       "distro": "alpine"
     },
     {
-      "key": "7.1-py3.7",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-bullseye",
-      "pgadmin": "7.1",
-      "pgadmin_canonical": "7.1.0",
-      "pgadmin_whl": "pgadmin4-7.1-py3-none-any.whl",
-      "distro": "bullseye"
-    },
-    {
-      "key": "7.1-py3.7-buster",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-buster",
-      "pgadmin": "7.1",
-      "pgadmin_canonical": "7.1.0",
-      "pgadmin_whl": "pgadmin4-7.1-py3-none-any.whl",
-      "distro": "buster"
-    },
-    {
-      "key": "7.1-py3.7-alpine",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-alpine",
-      "pgadmin": "7.1",
-      "pgadmin_canonical": "7.1.0",
-      "pgadmin_whl": "pgadmin4-7.1-py3-none-any.whl",
-      "distro": "alpine"
-    },
-    {
       "key": "7.0-py3.11",
       "python": "3.11",
       "python_canonical": "3.11.4",
@@ -571,36 +481,6 @@
       "distro": "alpine"
     },
     {
-      "key": "7.0-py3.7",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-bullseye",
-      "pgadmin": "7.0",
-      "pgadmin_canonical": "7.0.0",
-      "pgadmin_whl": "pgadmin4-7.0-py3-none-any.whl",
-      "distro": "bullseye"
-    },
-    {
-      "key": "7.0-py3.7-buster",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-buster",
-      "pgadmin": "7.0",
-      "pgadmin_canonical": "7.0.0",
-      "pgadmin_whl": "pgadmin4-7.0-py3-none-any.whl",
-      "distro": "buster"
-    },
-    {
-      "key": "7.0-py3.7-alpine",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-alpine",
-      "pgadmin": "7.0",
-      "pgadmin_canonical": "7.0.0",
-      "pgadmin_whl": "pgadmin4-7.0-py3-none-any.whl",
-      "distro": "alpine"
-    },
-    {
       "key": "6.21-py3.11",
       "python": "3.11",
       "python_canonical": "3.11.4",
@@ -715,36 +595,6 @@
       "python": "3.8",
       "python_canonical": "3.8.17",
       "python_image": "3.8.17-alpine",
-      "pgadmin": "6.21",
-      "pgadmin_canonical": "6.21.0",
-      "pgadmin_whl": "pgadmin4-6.21-py3-none-any.whl",
-      "distro": "alpine"
-    },
-    {
-      "key": "6.21-py3.7",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-bullseye",
-      "pgadmin": "6.21",
-      "pgadmin_canonical": "6.21.0",
-      "pgadmin_whl": "pgadmin4-6.21-py3-none-any.whl",
-      "distro": "bullseye"
-    },
-    {
-      "key": "6.21-py3.7-buster",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-buster",
-      "pgadmin": "6.21",
-      "pgadmin_canonical": "6.21.0",
-      "pgadmin_whl": "pgadmin4-6.21-py3-none-any.whl",
-      "distro": "buster"
-    },
-    {
-      "key": "6.21-py3.7-alpine",
-      "python": "3.7",
-      "python_canonical": "3.7.17",
-      "python_image": "3.7.17-alpine",
       "pgadmin": "6.21",
       "pgadmin_canonical": "6.21.0",
       "pgadmin_whl": "pgadmin4-6.21-py3-none-any.whl",
