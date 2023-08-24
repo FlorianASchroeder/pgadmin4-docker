@@ -2,7 +2,7 @@
 [![DockerBuild](https://img.shields.io/docker/cloud/build/chinaboeller/pgadmin4.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
 [![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square&logo=circleci)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
 
-Last updated by bot: 2023-07-27
+Last updated by bot: 2023-08-24
 
 # pgAdmin 4
 
@@ -19,6 +19,18 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 
 | Tag | pgAdmin version | Python version | Distro |
 | --- | --- | --- | --- |
+| `7.6-py3.11` | 7.6 | 3.11.4 | bullseye |
+| `7.6-py3.11-buster` | 7.6 | 3.11.4 | buster |
+| `7.6-py3.11-alpine` | 7.6 | 3.11.4 | alpine |
+| `7.6-py3.10` | 7.6 | 3.10.12 | bullseye |
+| `7.6-py3.10-buster` | 7.6 | 3.10.12 | buster |
+| `7.6-py3.10-alpine` | 7.6 | 3.10.12 | alpine |
+| `7.6-py3.9` | 7.6 | 3.9.17 | bullseye |
+| `7.6-py3.9-buster` | 7.6 | 3.9.17 | buster |
+| `7.6-py3.9-alpine` | 7.6 | 3.9.17 | alpine |
+| `7.6-py3.8` | 7.6 | 3.8.17 | bullseye |
+| `7.6-py3.8-buster` | 7.6 | 3.8.17 | buster |
+| `7.6-py3.8-alpine` | 7.6 | 3.8.17 | alpine |
 | `7.5-py3.11` | 7.5 | 3.11.4 | bullseye |
 | `7.5-py3.11-buster` | 7.5 | 3.11.4 | buster |
 | `7.5-py3.11-alpine` | 7.5 | 3.11.4 | alpine |
