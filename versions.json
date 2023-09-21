@@ -1,6 +1,86 @@
 {
   "versions": [
     {
+      "key": "7.7-py3.11",
+      "python": "3.11",
+      "python_canonical": "3.11.5",
+      "python_image": "3.11.5-bullseye",
+      "pgadmin": "7.7",
+      "pgadmin_canonical": "7.7.0",
+      "pgadmin_whl": "pgadmin4-7.7-py3-none-any.whl",
+      "distro": "bullseye"
+    },
+    {
+      "key": "7.7-py3.11-alpine",
+      "python": "3.11",
+      "python_canonical": "3.11.5",
+      "python_image": "3.11.5-alpine",
+      "pgadmin": "7.7",
+      "pgadmin_canonical": "7.7.0",
+      "pgadmin_whl": "pgadmin4-7.7-py3-none-any.whl",
+      "distro": "alpine"
+    },
+    {
+      "key": "7.7-py3.10",
+      "python": "3.10",
+      "python_canonical": "3.10.13",
+      "python_image": "3.10.13-bullseye",
+      "pgadmin": "7.7",
+      "pgadmin_canonical": "7.7.0",
+      "pgadmin_whl": "pgadmin4-7.7-py3-none-any.whl",
+      "distro": "bullseye"
+    },
+    {
+      "key": "7.7-py3.10-alpine",
+      "python": "3.10",
+      "python_canonical": "3.10.13",
+      "python_image": "3.10.13-alpine",
+      "pgadmin": "7.7",
+      "pgadmin_canonical": "7.7.0",
+      "pgadmin_whl": "pgadmin4-7.7-py3-none-any.whl",
+      "distro": "alpine"
+    },
+    {
+      "key": "7.7-py3.9",
+      "python": "3.9",
+      "python_canonical": "3.9.18",
+      "python_image": "3.9.18-bullseye",
+      "pgadmin": "7.7",
+      "pgadmin_canonical": "7.7.0",
+      "pgadmin_whl": "pgadmin4-7.7-py3-none-any.whl",
+      "distro": "bullseye"
+    },
+    {
+      "key": "7.7-py3.9-alpine",
+      "python": "3.9",
+      "python_canonical": "3.9.18",
+      "python_image": "3.9.18-alpine",
+      "pgadmin": "7.7",
+      "pgadmin_canonical": "7.7.0",
+      "pgadmin_whl": "pgadmin4-7.7-py3-none-any.whl",
+      "distro": "alpine"
+    },
+    {
+      "key": "7.7-py3.8",
+      "python": "3.8",
+      "python_canonical": "3.8.18",
+      "python_image": "3.8.18-bullseye",
+      "pgadmin": "7.7",
+      "pgadmin_canonical": "7.7.0",
+      "pgadmin_whl": "pgadmin4-7.7-py3-none-any.whl",
+      "distro": "bullseye"
+    },
+    {
+      "key": "7.7-py3.8-alpine",
+      "python": "3.8",
+      "python_canonical": "3.8.18",
+      "python_image": "3.8.18-alpine",
+      "pgadmin": "7.7",
+      "pgadmin_canonical": "7.7.0",
+      "pgadmin_whl": "pgadmin4-7.7-py3-none-any.whl",
+      "distro": "alpine"
+    },
+    {
       "key": "7.6-py3.11",
       "python": "3.11",
       "python_canonical": "3.11.5",
