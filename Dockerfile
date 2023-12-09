@@ -1,6 +1,6 @@
-# python: 3.12.0
+# python: 3.12.1
 # pgadmin: 8.0.0
-FROM python:3.12.0-bullseye
+FROM python:3.12.1-bullseye
 MAINTAINER Florian Schroeder <schroeder.florian@gmail.com>
 
 # create a non-privileged user to use at runtime

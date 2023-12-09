@@ -3,8 +3,8 @@
     {
       "key": "8.0-py3.12",
       "python": "3.12",
-      "python_canonical": "3.12.0",
-      "python_image": "3.12.0-bullseye",
+      "python_canonical": "3.12.1",
+      "python_image": "3.12.1-bullseye",
       "pgadmin": "8.0",
       "pgadmin_canonical": "8.0.0",
       "pgadmin_whl": "pgadmin4-8.0-py3-none-any.whl",
@@ -13,8 +13,8 @@
     {
       "key": "8.0-py3.12-alpine",
       "python": "3.12",
-      "python_canonical": "3.12.0",
-      "python_image": "3.12.0-alpine",
+      "python_canonical": "3.12.1",
+      "python_image": "3.12.1-alpine",
       "pgadmin": "8.0",
       "pgadmin_canonical": "8.0.0",
       "pgadmin_whl": "pgadmin4-8.0-py3-none-any.whl",
@@ -103,8 +103,8 @@
     {
       "key": "7.8-py3.12",
       "python": "3.12",
-      "python_canonical": "3.12.0",
-      "python_image": "3.12.0-bullseye",
+      "python_canonical": "3.12.1",
+      "python_image": "3.12.1-bullseye",
       "pgadmin": "7.8",
       "pgadmin_canonical": "7.8.0",
       "pgadmin_whl": "pgadmin4-7.8-py3-none-any.whl",
@@ -113,8 +113,8 @@
     {
       "key": "7.8-py3.12-alpine",
       "python": "3.12",
-      "python_canonical": "3.12.0",
-      "python_image": "3.12.0-alpine",
+      "python_canonical": "3.12.1",
+      "python_image": "3.12.1-alpine",
       "pgadmin": "7.8",
       "pgadmin_canonical": "7.8.0",
       "pgadmin_whl": "pgadmin4-7.8-py3-none-any.whl",
