@@ -1,5 +1,5 @@
 # python: 3.12.2
-# pgadmin: 8.4.0
+# pgadmin: 8.5.0
 FROM python:3.12.2-bullseye
 MAINTAINER Florian Schroeder <schroeder.florian@gmail.com>
 
@@ -16,11 +16,11 @@ RUN apt update \
  && apt autoremove -y \
  && apt clean
 
-ENV PGADMIN_VERSION=8.4
+ENV PGADMIN_VERSION=8.5
 ENV PYTHONDONTWRITEBYTECODE=1
 
 RUN pip install --upgrade --no-cache-dir pip \
- && echo "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v${PGADMIN_VERSION}/pip/pgadmin4-8.4-py3-none-any.whl" | pip install --no-cache-dir -r /dev/stdin \
+ && echo "https://ftp.postgresql.org/pub/pgadmin/pgadmin4/v${PGADMIN_VERSION}/pip/pgadmin4-8.5-py3-none-any.whl" | pip install --no-cache-dir -r /dev/stdin \
  && pip install --no-cache-dir --upgrade Flask-WTF
 
 EXPOSE 5050
