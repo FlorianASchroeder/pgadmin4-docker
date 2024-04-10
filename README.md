@@ -19,6 +19,8 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 
 | Tag | pgAdmin version | Python version | Distro |
 | --- | --- | --- | --- |
+| `8.5-py3.12` | 8.5 | 3.12.3 | bullseye |
+| `8.5-py3.12-alpine` | 8.5 | 3.12.3 | alpine |
 | `8.5-py3.11` | 8.5 | 3.11.9 | bullseye |
 | `8.5-py3.11-alpine` | 8.5 | 3.11.9 | alpine |
 | `8.5-py3.10` | 8.5 | 3.10.14 | bullseye |
@@ -27,6 +29,8 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `8.5-py3.9-alpine` | 8.5 | 3.9.19 | alpine |
 | `8.5-py3.8` | 8.5 | 3.8.19 | bullseye |
 | `8.5-py3.8-alpine` | 8.5 | 3.8.19 | alpine |
+| `8.4-py3.12` | 8.4 | 3.12.3 | bullseye |
+| `8.4-py3.12-alpine` | 8.4 | 3.12.3 | alpine |
 | `8.4-py3.11` | 8.4 | 3.11.9 | bullseye |
 | `8.4-py3.11-alpine` | 8.4 | 3.11.9 | alpine |
 | `8.4-py3.10` | 8.4 | 3.10.14 | bullseye |
@@ -35,6 +39,8 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `8.4-py3.9-alpine` | 8.4 | 3.9.19 | alpine |
 | `8.4-py3.8` | 8.4 | 3.8.19 | bullseye |
 | `8.4-py3.8-alpine` | 8.4 | 3.8.19 | alpine |
+| `8.3-py3.12` | 8.3 | 3.12.3 | bullseye |
+| `8.3-py3.12-alpine` | 8.3 | 3.12.3 | alpine |
 | `8.3-py3.11` | 8.3 | 3.11.9 | bullseye |
 | `8.3-py3.11-alpine` | 8.3 | 3.11.9 | alpine |
 | `8.3-py3.10` | 8.3 | 3.10.14 | bullseye |
@@ -43,6 +49,8 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 | `8.3-py3.9-alpine` | 8.3 | 3.9.19 | alpine |
 | `8.3-py3.8` | 8.3 | 3.8.19 | bullseye |
 | `8.3-py3.8-alpine` | 8.3 | 3.8.19 | alpine |
+| `7.8-py3.12` | 7.8 | 3.12.3 | bullseye |
+| `7.8-py3.12-alpine` | 7.8 | 3.12.3 | alpine |
 | `7.8-py3.11` | 7.8 | 3.11.9 | bullseye |
 | `7.8-py3.11-alpine` | 7.8 | 3.11.9 | alpine |
 | `7.8-py3.10` | 7.8 | 3.10.14 | bullseye |

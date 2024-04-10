@@ -1,6 +1,6 @@
-# python: 3.11.9
+# python: 3.12.3
 # pgadmin: 8.5.0
-FROM python:3.11.9-bullseye
+FROM python:3.12.3-bullseye
 MAINTAINER Florian Schroeder <schroeder.florian@gmail.com>
 
 # create a non-privileged user to use at runtime
@@ -25,7 +25,7 @@ RUN pip install --upgrade --no-cache-dir pip \
 
 EXPOSE 5050
 
-COPY LICENSE config_distro.py /usr/local/lib/python3.11/site-packages/pgadmin4/
+COPY LICENSE config_distro.py /usr/local/lib/python3.12/site-packages/pgadmin4/
 COPY entrypoint.sh /usr/local/bin/
 
 RUN chmod ug=rwx /usr/local/bin/entrypoint.sh \
@@ -33,5 +33,5 @@ RUN chmod ug=rwx /usr/local/bin/entrypoint.sh \
 
 USER pgadmin:pgadmin
 ENTRYPOINT [ "/usr/local/bin/entrypoint.sh" ]
-CMD ["python", "./usr/local/lib/python3.11/site-packages/pgadmin4/pgAdmin4.py"]
+CMD ["python", "./usr/local/lib/python3.12/site-packages/pgadmin4/pgAdmin4.py"]
 VOLUME /pgadmin/
