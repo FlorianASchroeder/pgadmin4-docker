@@ -2,7 +2,7 @@
 [![DockerBuild](https://img.shields.io/docker/cloud/build/chinaboeller/pgadmin4.svg?style=flat-square&logo=docker)](https://hub.docker.com/r/chinaboeller/pgadmin4/)
 [![CircleCI](https://img.shields.io/circleci/project/github/FlorianASchroeder/pgadmin4-docker.svg?style=flat-square&logo=circleci)](https://circleci.com/gh/FlorianASchroeder/pgadmin4-docker)
 
-Last updated by bot: 2024-04-10
+Last updated by bot: 2024-05-02
 
 # pgAdmin 4
 
@@ -19,6 +19,16 @@ To use a specific combination of pgAdmin 4 and python see the following table of
 
 | Tag | pgAdmin version | Python version | Distro |
 | --- | --- | --- | --- |
+| `8.6-py3.12` | 8.6 | 3.12.3 | bullseye |
+| `8.6-py3.12-alpine` | 8.6 | 3.12.3 | alpine |
+| `8.6-py3.11` | 8.6 | 3.11.9 | bullseye |
+| `8.6-py3.11-alpine` | 8.6 | 3.11.9 | alpine |
+| `8.6-py3.10` | 8.6 | 3.10.14 | bullseye |
+| `8.6-py3.10-alpine` | 8.6 | 3.10.14 | alpine |
+| `8.6-py3.9` | 8.6 | 3.9.19 | bullseye |
+| `8.6-py3.9-alpine` | 8.6 | 3.9.19 | alpine |
+| `8.6-py3.8` | 8.6 | 3.8.19 | bullseye |
+| `8.6-py3.8-alpine` | 8.6 | 3.8.19 | alpine |
 | `8.5-py3.12` | 8.5 | 3.12.3 | bullseye |
 | `8.5-py3.12-alpine` | 8.5 | 3.12.3 | alpine |
 | `8.5-py3.11` | 8.5 | 3.11.9 | bullseye |
